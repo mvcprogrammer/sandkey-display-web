@@ -38,3 +38,5 @@ test-results/
 
 # CDK
 infra/cdk.out/
+
+# Fixtures are generated from golden/ by mock/extract-fixtures.mjs

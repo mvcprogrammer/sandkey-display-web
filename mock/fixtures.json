@@ -1,0 +1,658 @@
+{
+  "sale": [
+    {
+      "listingKey": "6b26f42527d947fbab7b9e9b4b9ca26d",
+      "listPrice": 37500000,
+      "subdivisionName": "MANDALAY POINT SUB 1ST ADD",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 3434,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/715185323/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "a680071b7053da61a207ecb4c79ef18e",
+      "listPrice": 14250000,
+      "subdivisionName": "MANDALAY POINT SUB",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 5,
+      "bathroomsFull": 4,
+      "livingArea": 5421,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/761698012/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "09ab4b00704acd02f88c8867521496cb",
+      "listPrice": 11950000,
+      "subdivisionName": "VICEROY RESIDENCES CLEARWATER BEACH",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 5,
+      "bathroomsFull": 5,
+      "livingArea": 6124,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/811169452/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "6904026fc8978e68712ffd365c4b2fb0",
+      "listPrice": 7995000,
+      "subdivisionName": "MANDALAY SUB",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 4,
+      "bathroomsFull": 4,
+      "livingArea": 4025,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/787472501/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "940f1bd1d10d52e36c33302ab0ca6746",
+      "listPrice": 6900000,
+      "subdivisionName": "MANDALAY SUB",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 5,
+      "bathroomsFull": 5,
+      "livingArea": 5074,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/780747248/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "4a5324967e153585cf3eac4a66b7f6f5",
+      "listPrice": 6400000,
+      "subdivisionName": "MANDALAY SUB",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 2548,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/768233504/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "943a9e52067aa8f9ea77efeb1854baf2",
+      "listPrice": 5600000,
+      "subdivisionName": "MANDALAY SUB",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 4,
+      "livingArea": 3559,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/794888732/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "e7faa12db8ae93af6e68253186d459bb",
+      "listPrice": 5250000,
+      "subdivisionName": "CARLOUEL",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 6,
+      "bathroomsFull": 5,
+      "livingArea": 5016,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/757217084/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "abeda0c90a0f5ec0a4ae8e2cb44c66ff",
+      "listPrice": 4890000,
+      "subdivisionName": "BAYSIDE SHORES",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 4,
+      "bathroomsFull": 3,
+      "livingArea": 2996,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/802286699/83dcefb7.jpeg"
+      }
+    }
+  ],
+  "salePage2": [
+    {
+      "listingKey": "347123da355606c489b50ccb90b83d24",
+      "listPrice": 4599000,
+      "subdivisionName": "UTOPIA CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 4,
+      "bathroomsFull": 4,
+      "livingArea": 4656,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/792743689/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "5602e0a100feeccc3ccb8b8d448480bf",
+      "listPrice": 4245000,
+      "subdivisionName": "VICEROY RESIDENCES CLEARWATER BEACH",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 2980,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/779883665/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "7af02af535cf2b39b3f80ca4288c2cb6",
+      "listPrice": 3950000,
+      "subdivisionName": "MANDALAY SUB",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 5,
+      "bathroomsFull": 4,
+      "livingArea": 7261,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/773409229/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "e75de8c3356343f4ca8f84f2dc75cebd",
+      "listPrice": 3750000,
+      "subdivisionName": "VICEROY RESIDENCES CLEARWATER BEACH",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 2965,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/779695958/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "43d23edc0964bf13007bc4731a9da022",
+      "listPrice": 3700000,
+      "subdivisionName": "ISLAND ESTATES OF CLEARWATER",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 6,
+      "bathroomsFull": 5,
+      "livingArea": 4934,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/783482663/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "ad700bba4a57431a093ee3a404bb57df",
+      "listPrice": 3500000,
+      "subdivisionName": "CARLOUEL",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 4,
+      "bathroomsFull": 4,
+      "livingArea": 4192,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/779954902/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "bbe36bcf97ae99f64aec21b1c270dd59",
+      "listPrice": 3500000,
+      "subdivisionName": "RESIDENCES AT SANDPEARL RESORT CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 2605,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/786818427/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "2a4fcf0cbe72d4939b4d9139a0b79010",
+      "listPrice": 3500000,
+      "subdivisionName": "MANDALAY SUB",
+      "propertyType": "Residential",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 2,
+      "livingArea": 2062,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/786160099/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "b4cefbd3d512b3a15c5148052818b192",
+      "listPrice": 3500000,
+      "subdivisionName": "AQUALEA RESIDENCES CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 2705,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/788930103/83dcefb7.jpeg"
+      }
+    }
+  ],
+  "saleAscending": [
+    {
+      "listingKey": "145fa5df14fc290091ecc262a3a2c4d9",
+      "listPrice": 175000,
+      "subdivisionName": "LA BRISA DEL MAR CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Dock-Rackominium",
+      "bedroomsTotal": 0,
+      "bathroomsFull": 0,
+      "livingArea": 0,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/777798498/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "a7db0332cef88cc6b4d26fe70c948e29",
+      "listPrice": 175000,
+      "subdivisionName": "LA BRISA DEL MAR CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Dock-Rackominium",
+      "bedroomsTotal": 0,
+      "bathroomsFull": 0,
+      "livingArea": 0,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/777798888/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "ae4a06d8bc7e8971e537ba1c9504b78c",
+      "listPrice": 199000,
+      "subdivisionName": "ISLAND YACHT CLUB CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Dock-Rackominium",
+      "bedroomsTotal": 0,
+      "bathroomsFull": 0,
+      "livingArea": 0,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/762784783/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "154230c3a77f2511422d234299c2ed96",
+      "listPrice": 200000,
+      "subdivisionName": "ISLANDER THE CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 1,
+      "livingArea": 900,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/793883078/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "1416f81d273cb49c6bf5eb218a68d4fc",
+      "listPrice": 210000,
+      "subdivisionName": "ISLANDER THE CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 2,
+      "livingArea": 1090,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/780114951/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "91548a5b5aef56b745e19cd21915cc7f",
+      "listPrice": 220000,
+      "subdivisionName": "ISLANDER THE CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 2,
+      "livingArea": 1090,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/772377945/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "dab1d8865ff726e5a00f0aa49633167b",
+      "listPrice": 230000,
+      "subdivisionName": "LA BRISA DEL MAR CONDO",
+      "propertyType": "Residential",
+      "propertySubType": "Dock-Rackominium",
+      "bedroomsTotal": 0,
+      "bathroomsFull": 0,
+      "livingArea": 0,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/777798611/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "48d45f083e8cd92a9f717bf0631770fe",
+      "listPrice": 230500,
+      "subdivisionName": "HORIZON HOUSE CO-OP",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 1,
+      "bathroomsFull": 1,
+      "livingArea": 1005,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/771003024/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "7b91486b76fc1e08f697cfcdb39e192e",
+      "listPrice": 245000,
+      "subdivisionName": "DOLPHIN COVE CLEARWATER",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 0,
+      "bathroomsFull": 1,
+      "livingArea": 439,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/789661996/83dcefb7.jpeg"
+      }
+    }
+  ],
+  "saleCondo100": [
+    {
+      "listingKey": "be19f77baa8d469e70cd19213ae6b8aa",
+      "listPrice": 950000,
+      "subdivisionName": "LANDMARK TOWERS 2",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 2,
+      "livingArea": 1569,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/792999788/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "5457ccc3ebcb3b204edf1a99873bc17b",
+      "listPrice": 700000,
+      "subdivisionName": "LANDMARK TOWERS 1",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 2,
+      "livingArea": 1111,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/782798687/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "311629d655d921e7882e9f184eb75cf7",
+      "listPrice": 659000,
+      "subdivisionName": "LANDMARK TOWERS 2",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 2,
+      "livingArea": 1265,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/800931497/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "d3ccd9de305dcd92688578cd0aeeac5f",
+      "listPrice": 625000,
+      "subdivisionName": "LANDMARK TOWERS ONE",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 1,
+      "bathroomsFull": 1,
+      "livingArea": 869,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/800634987/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "a3874fac838c62620dc200db5e6a980a",
+      "listPrice": 575000,
+      "subdivisionName": "LANDMARK TOWERS 1",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 2,
+      "livingArea": 1111,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/800507063/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "1f665e328ff5a606c1a9289b3a8692fd",
+      "listPrice": 570000,
+      "subdivisionName": "LANDMARK TOWERS",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 2,
+      "livingArea": 1111,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/743355374/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "8531111ce98899aca1e9a755a3d0882c",
+      "listPrice": 565000,
+      "subdivisionName": "LANDMARK TOWERS 1",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 1,
+      "bathroomsFull": 1,
+      "livingArea": 869,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/788629199/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "7637f49af4829fa8843349020ef97b71",
+      "listPrice": 549900,
+      "subdivisionName": "LANDMARK TOWERS ONE",
+      "propertyType": "Residential",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 2,
+      "livingArea": 1111,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/785110324/83dcefb7.jpeg"
+      }
+    }
+  ],
+  "lease": [
+    {
+      "listingKey": "82db4c6409ced317def508d8314c71ae",
+      "listPrice": 20000,
+      "subdivisionName": "AQUALEA RESIDENCES CONDO",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Condo - Hotel",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 2705,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/758884389/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "80284874bc167ccc884797501f599b7b",
+      "listPrice": 17500,
+      "subdivisionName": "ULTIMAR THREE CONDO",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 4,
+      "bathroomsFull": 4,
+      "livingArea": 4336,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/767353727/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "06af043915307ea1eba44d106cc68399",
+      "listPrice": 16950,
+      "subdivisionName": "MANDALAY SUB",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 5,
+      "bathroomsFull": 4,
+      "livingArea": 2952,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/787775146/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "0875f57d01d9409a4303b0e412b7b911",
+      "listPrice": 15000,
+      "subdivisionName": "ISLAND ESTATES OF CLEARWATER",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 4,
+      "bathroomsFull": 3,
+      "livingArea": 2995,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/804863667/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "c353f480d467c80af51db94dbe68cd4b",
+      "listPrice": 15000,
+      "subdivisionName": "RESIDENCES AT SANDPEARL RESORT CONDO",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 2,
+      "livingArea": 1857,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/804269563/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "0574de7887df0102674eedcce852551a",
+      "listPrice": 15000,
+      "subdivisionName": "ULTIMAR THREE CONDO",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 2570,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/787678476/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "5272605bb2d1ba4d717265d9c0731e6b",
+      "listPrice": 14500,
+      "subdivisionName": "PURA VIDA RESIDENCES CONDO",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 2618,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/791206502/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "dd75be83b7b5f41ee4d5cfe6ef3f792c",
+      "listPrice": 14500,
+      "subdivisionName": "ISLAND ESTATES OF CLEARWATER UNIT 7B",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Single Family Residence",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 3,
+      "livingArea": 2446,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/767018351/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "69630732c20465e34617e467c7e602b6",
+      "listPrice": 13000,
+      "subdivisionName": "RESIDENCES AT SANDPEARL RESORT CONDO",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 2,
+      "bathroomsFull": 2,
+      "livingArea": 1680,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/769479016/83dcefb7.jpeg"
+      }
+    }
+  ],
+  "leaseCondo117": [
+    {
+      "listingKey": "f544b6421c0bbc0e7a81ed67a4781067",
+      "listPrice": 5500,
+      "subdivisionName": "GRANDE ON SAND KEY CONDO PHASE II UNIT 1105",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 2,
+      "livingArea": 1952,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/794519538/83dcefb7.jpeg"
+      }
+    },
+    {
+      "listingKey": "255457829470b1cfa4bb042e76bd9e88",
+      "listPrice": 5400,
+      "subdivisionName": "GRANDE ON SAND KEY CONDO",
+      "propertyType": "Residential Lease",
+      "propertySubType": "Condominium",
+      "bedroomsTotal": 3,
+      "bathroomsFull": 2,
+      "livingArea": 1598,
+      "primaryPhoto": {
+        "order": 0,
+        "url": "/media/735d922b/794748772/83dcefb7.jpeg"
+      }
+    }
+  ]
+}
