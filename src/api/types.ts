@@ -64,12 +64,6 @@ export interface Listing {
   lastModified: string
 }
 
-/** A condominium hotspot on the home screen. */
-export interface Condo {
-  id: number
-  name: string
-}
-
 /** A page of results. */
 export interface Paged<T> {
   items: T[]
@@ -82,7 +76,6 @@ export interface Paged<T> {
 /** Filters for a listings search. */
 export interface ListingsQuery {
   type: ListingType
-  condo: number
   order: SortDirection
   page: number
   pageSize?: number

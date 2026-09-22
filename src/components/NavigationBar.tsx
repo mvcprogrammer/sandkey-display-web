@@ -6,7 +6,6 @@ interface NavigationBarProps {
   basePath: string
   order: SortDirection
   page: number
-  condoId: number
   /** Whether a further page exists. The legacy kiosk had no way to know. */
   hasMore: boolean
 }
@@ -28,7 +27,6 @@ export function NavigationBar({
   basePath,
   order,
   page,
-  condoId,
   hasMore,
 }: NavigationBarProps): JSX.Element {
   const orderSegment = ORDER_SEGMENT[order]
@@ -38,7 +36,7 @@ export function NavigationBar({
   return (
     <div className="Navigation_Container">
       <div className="Navigate_Prev">
-        <Link to={`${basePath}/${orderSegment}/${previousPage}/${condoId}`}>
+        <Link to={`${basePath}/${orderSegment}/${previousPage}`}>
           <img src="/Images/Prev.png" alt="Navigate Previous" />
         </Link>
       </div>
@@ -48,17 +46,17 @@ export function NavigationBar({
         </Link>
       </div>
       <div className="Navigate_Next">
-        <Link to={`${basePath}/${orderSegment}/${nextPage}/${condoId}`}>
+        <Link to={`${basePath}/${orderSegment}/${nextPage}`}>
           <img src="/Images/Next.png" alt="Navigate Next" />
         </Link>
       </div>
       <div className="Navigate_SortHighToLow">
-        <Link to={`${basePath}/${ORDER_SEGMENT[SortDirection.Descending]}/0/${condoId}`}>
+        <Link to={`${basePath}/${ORDER_SEGMENT[SortDirection.Descending]}/0`}>
           <img src="/Images/SortHighToLow.png" alt="Sort Descending" />
         </Link>
       </div>
       <div className="Navigate_SortLowToHigh">
-        <Link to={`${basePath}/${ORDER_SEGMENT[SortDirection.Ascending]}/0/${condoId}`}>
+        <Link to={`${basePath}/${ORDER_SEGMENT[SortDirection.Ascending]}/0`}>
           <img src="/Images/SortLowToHigh.png" alt="Sort Ascending" />
         </Link>
       </div>

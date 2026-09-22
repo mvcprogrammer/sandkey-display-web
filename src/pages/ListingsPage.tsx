@@ -22,20 +22,19 @@ function toSortDirection(segment: string | undefined): SortDirection {
 /**
  * The results grid, nine listings to a page.
  *
- * The route shape is carried over from the legacy application - `/Residential/2/1/100` is
- * descending, page one, Landmark Towers - so the kiosk's existing links and the office's muscle
- * memory both still work. The filters reach the API as query parameters.
+ * The route shape is carried over from the legacy application - `/Residential/2/1` is
+ * descending, page one - so the office's muscle memory still works. The filters reach the API as
+ * query parameters.
  */
 export function ListingsPage({ type, basePath }: ListingsPageProps): JSX.Element {
-  const { order: orderSegment, page: pageSegment, condoId: condoSegment } = useParams()
+  const { order: orderSegment, page: pageSegment } = useParams()
 
   const order = toSortDirection(orderSegment)
   const page = Math.max(0, Number(pageSegment ?? 0) || 0)
-  const condoId = Math.max(0, Number(condoSegment ?? 0) || 0)
 
   const { data, error, loading } = useAsync(
-    (signal) => getListings({ type, condo: condoId, order, page }, signal),
-    [type, condoId, order, page],
+    (signal) => getListings({ type, order, page }, signal),
+    [type, order, page],
   )
 
   return (
@@ -58,7 +57,6 @@ export function ListingsPage({ type, basePath }: ListingsPageProps): JSX.Element
         basePath={basePath}
         order={order}
         page={page}
-        condoId={condoId}
         hasMore={data?.hasMore ?? false}
       />
     </>

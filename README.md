@@ -1,8 +1,8 @@
 # sandkey-display-web
 
 The screen of a touch-screen property kiosk in a Clearwater Beach real estate office. It shows an
-aerial photograph of Sand Key with a touchable region over each condominium, and lets a visitor
-browse listings, look at photos, and ask to be emailed details or called back.
+aerial photograph of Sand Key with two buttons, sales and rentals, and lets a visitor browse
+listings, look at photos, and ask to be emailed details or called back.
 
 The backend is `SandKey.Api.Display`.
 
@@ -54,7 +54,7 @@ have to line up with the artwork to the pixel. None of those numbers are arbitra
 
 ### Deliberate departures
 
-Five, and no others:
+Six, and no others:
 
 | | |
 |---|---|
@@ -62,6 +62,7 @@ Five, and no others:
 | **Rental listings open the rental detail route** | Both legacy views tagged their tiles `residential_listing_data`, so the rental handler in `navigation.js` never fired and a rental opened `/Residential/Details/…`. It happened to work because both routes look up the same key. Rentals now use `rental_listing_data` and their own route. Neither class carries any styling, so nothing moves. |
 | **Photos are not proxied** | `photo_swap.js` fetched each photo as an array buffer and rebuilt it as a blob URL, a workaround for photos being served through the application tier. They now load straight from the Bridge CDN, so swapping one is a state change. |
 | **Previous on the first page stays on the first page** | The legacy link pointed at page −1 and the controller silently clamped it. The button is still there and still in the same place; it just no longer asks for a page that cannot exist. |
+| **The home screen has no building selection** | The old photo carried a touchable region over each condominium, a "(or touch a building)" line, and the two buttons painted into the top-right corner. On 2026-09-22 the office asked for the building option to go, because visitors found it confusing, and for the buttons to sit in the middle of the screen. The buttons are real elements now, drawn in the artwork's colours over the clean photograph, and the condo screen and its routes are gone. |
 | **Listings default to lowest price first** | The legacy kiosk opened every grid highest price first. The office asked for the reverse on 2026-09-22, so a route with no sort segment, and the two buttons on the condo screen, now sort ascending. The two sort buttons under the grid are unchanged, and `/Residential/2/…` still means descending. |
 
 Two oddities in the original were reproduced rather than fixed, because fixing them would move the
@@ -76,16 +77,15 @@ say so. The shift keys on the email keyboard are likewise still inert — they f
 ```
 src/
   api/          client.ts, types.ts  — mirrors the API contract
-  components/   ImageMap, ListingCard, NavigationBar, PhotoSwapper,
+  components/   TouchButton, ListingCard, NavigationBar, PhotoSwapper,
                 OnScreenKeyboard, NumPad, KeyRowView, Modal, keyboardLayout
   hooks/        useIdleTimer (3 minutes to the lock screen), useAsync
-  pages/        Home, Locked, Condo, Listings, Detail
-  hotspots.ts   the 20 image-map regions, generated from the legacy view
+  pages/        Home, Locked, Listings, Detail
   format.ts     price, area and pluralisation, in one place
 ```
 
-Routes are the ones the legacy application served, unchanged, so `/Residential/2/1/100` still means
-descending, page one, Landmark Towers.
+Routes keep the legacy shape, so `/Residential/2/1` still means descending, page one. The third
+segment that named a condominium went with the building selection.
 
 `Modal` replaces jquery.bpopup, keeping its 650ms timing and both of its transitions.
 `useIdleTimer` replaces the global `setTimeout` in `navigation.js`; the three-minute timeout and
@@ -96,5 +96,5 @@ relying on every screen being a full page load.
 
 The structural check is automated: every class name the live kiosk renders is present in `src/`,
 checked against the golden captures. The visual check is not — put the two side by side at
-1920×1080 and walk the path: home → condo → listings → detail → email → back → idle three
-minutes → lock screen → touch → home.
+1920×1080 and walk the path: home → listings → detail → email → back → idle three minutes →
+lock screen → touch → home. The home screen itself no longer matches the capture, by request.

@@ -49,11 +49,9 @@ function parsePage(name) {
 const sale = parsePage('residential-page1')
 const salePage2 = parsePage('residential-page2')
 const saleAscending = parsePage('residential-asc')
-const saleCondo100 = parsePage('residential-condo100')
 const lease = parsePage('rental-page1')
-const leaseCondo117 = parsePage('rental-condo117')
 
-const fixtures = { sale, salePage2, saleAscending, saleCondo100, lease, leaseCondo117 }
+const fixtures = { sale, salePage2, saleAscending, lease }
 
 writeFileSync(join(here, 'fixtures.json'), `${JSON.stringify(fixtures, null, 2)}\n`)
 

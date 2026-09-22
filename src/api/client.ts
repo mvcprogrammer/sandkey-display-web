@@ -1,4 +1,4 @@
-import type { Condo, Listing, ListingSummary, ListingsQuery, Paged } from './types'
+import type { Listing, ListingSummary, ListingsQuery, Paged } from './types'
 
 /**
  * Raised when the API answers with a problem detail. Carries the status so a caller can tell a
@@ -54,23 +54,12 @@ export function getListings(
     pageSize: String(query.pageSize ?? PAGE_SIZE),
   })
 
-  // Zero means "the whole of Clearwater Beach"; the API treats an unmapped id the same way, but
-  // leaving it out keeps the request readable in a log.
-  if (query.condo > 0) {
-    parameters.set('condo', String(query.condo))
-  }
-
   return getJson<Paged<ListingSummary>>(`/listings?${parameters.toString()}`, signal)
 }
 
 /** Fetches one listing in full. */
 export function getListing(listingKey: string, signal?: AbortSignal): Promise<Listing> {
   return getJson<Listing>(`/listings/${encodeURIComponent(listingKey)}`, signal)
-}
-
-/** Fetches the condominium hotspots. */
-export function getCondos(signal?: AbortSignal): Promise<Paged<Condo>> {
-  return getJson<Paged<Condo>>('/condos', signal)
 }
 
 /**

@@ -18,23 +18,10 @@ const detail = JSON.parse(readFileSync(join(here, 'detail.json'), 'utf8'))
 const PORT = Number(process.env.PORT ?? 5036)
 const PAGE_SIZE = 9
 
-const CONDOS = [
-  [100, 'LANDMARK TOWERS'], [101, 'HARBOUR LIGHT TOWERS'], [102, 'SOUTH BAY'],
-  [103, 'BAYSIDE'], [104, 'DANS ISLAND'], [105, 'CABANA CLUB'], [106, 'ULTIMAR'],
-  [107, 'SOUTH BEACH'], [108, 'SOUTH BEACH'], [109, 'SOUTH BEACH'], [110, 'SAND KEY CLUB'],
-  [111, 'UTOPIA'], [112, 'CRESCENT BEACH CLUB'], [113, 'LIGHTHOUSE TOWERS'],
-  [114, 'LIGHTHOUSE TOWERS'], [115, 'HARBOUR LIGHT'], [116, 'MERIDIAN ON SAND KEY'],
-  [117, 'GRANDE ON SAND KEY'],
-].map(([id, name]) => ({ id, name }))
-
 /** Picks the closest captured page for a set of filters. */
-function selectListings({ type, condo, order, page }) {
+function selectListings({ type, order, page }) {
   if (type === 'Lease') {
-    return condo === 117 ? fixtures.leaseCondo117 : fixtures.lease
-  }
-
-  if (condo === 100) {
-    return fixtures.saleCondo100
+    return fixtures.lease
   }
 
   if (order === 'Ascending') {
@@ -65,17 +52,6 @@ createServer((request, response) => {
     return
   }
 
-  if (path === '/api/display/condos') {
-    json(response, 200, {
-      items: CONDOS,
-      totalCount: CONDOS.length,
-      page: 0,
-      pageSize: CONDOS.length,
-      hasMore: false,
-    })
-    return
-  }
-
   const listingMatch = path.match(/^\/api\/display\/listings\/(.+)$/)
 
   if (listingMatch) {
@@ -87,7 +63,6 @@ createServer((request, response) => {
     const page = Number(url.searchParams.get('page') ?? 0)
     const items = selectListings({
       type: url.searchParams.get('type') ?? 'Sale',
-      condo: Number(url.searchParams.get('condo') ?? 0),
       order: url.searchParams.get('order') ?? 'Ascending',
       page,
     })
