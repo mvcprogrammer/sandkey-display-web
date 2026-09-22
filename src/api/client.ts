@@ -81,14 +81,28 @@ export async function submitInquiry(
   body: { listingKey: string; emailAddress?: string; phoneNumber?: string },
   signal?: AbortSignal,
 ): Promise<void> {
+  const payload = JSON.stringify(body)
   const response = await fetch(`${BASE_PATH}/inquiries`, {
     method: 'POST',
     signal,
-    headers: { 'content-type': 'application/json', accept: 'application/json' },
-    body: JSON.stringify(body),
+    headers: {
+      'content-type': 'application/json',
+      accept: 'application/json',
+      'x-amz-content-sha256': await sha256Hex(payload),
+    },
+    body: payload,
   })
 
   if (!response.ok) {
     throw new ApiError(response.status, await readProblemTitle(response))
   }
+}
+
+/**
+ * In production CloudFront signs every request it forwards to the API, and a signed POST has to
+ * carry the SHA-256 of its body. GETs need nothing; the dev server ignores the header.
+ */
+async function sha256Hex(text: string): Promise<string> {
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text))
+  return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('')
 }
