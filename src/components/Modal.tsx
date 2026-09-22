@@ -1,4 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react'
+import { createPortal } from 'react-dom'
 
 /** Transition duration the legacy bPopup calls used. */
 const TRANSITION_MS = 650
@@ -18,6 +19,11 @@ interface ModalProps {
  *
  * Replaces jquery.bpopup, keeping its 650ms timing and its two transitions so the keyboard and
  * the thank-you message appear exactly as they did.
+ *
+ * The dialog is portalled to `document.body`, which is where bPopup appended it (`appendTo:
+ * 'body'` was its default). That matters for the keyboard: the detail page sets white text, and
+ * the key labels are only legible on the grey key artwork because they inherit the body's dark
+ * colour instead.
  */
 export function Modal({ open, transition = 'fadeIn', onClose, children }: ModalProps): JSX.Element | null {
   const [mounted, setMounted] = useState(open)
@@ -40,7 +46,7 @@ export function Modal({ open, transition = 'fadeIn', onClose, children }: ModalP
     return null
   }
 
-  return (
+  return createPortal(
     <div
       className="modal-backdrop-kiosk"
       onClick={onClose}
@@ -66,6 +72,7 @@ export function Modal({ open, transition = 'fadeIn', onClose, children }: ModalP
       >
         {children}
       </div>
-    </div>
+    </div>,
+    document.body,
   )
 }
