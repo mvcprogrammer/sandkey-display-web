@@ -1,7 +1,7 @@
 import { TouchButton } from '../components/TouchButton'
 
 /**
- * The home screen: the aerial photograph with the two touch buttons centred over it.
+ * The home screen: the aerial photograph with the two touch buttons side by side, centred over it.
  *
  * Until 2026-09-22 the photo also carried a touchable region over each condominium and the line
  * "(or touch a building)". The office asked for both to go, because visitors found the building
@@ -16,10 +16,10 @@ export function HomePage(): JSX.Element {
           position: 'absolute',
           inset: 0,
           display: 'flex',
-          flexDirection: 'column',
+          flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: 48,
+          gap: 96,
         }}
       >
         <TouchButton to="/Residential/" label="For Sales Information" />
