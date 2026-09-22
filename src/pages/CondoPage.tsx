@@ -42,7 +42,7 @@ export function CondoPage(): JSX.Element {
         </div>
         <div
           className="class_residential_selector"
-          onClick={() => navigate(`/Residential/2/0/${id}`)}
+          onClick={() => navigate(`/Residential/1/0/${id}`)}
           style={{
             backgroundColor: 'transparent',
             padding: '72px 15px',
@@ -58,7 +58,7 @@ export function CondoPage(): JSX.Element {
         </div>
         <div
           className="class_rental_selector"
-          onClick={() => navigate(`/Rental/2/0/${id}`)}
+          onClick={() => navigate(`/Rental/1/0/${id}`)}
           style={{
             backgroundColor: 'transparent',
             padding: '72px 15px',

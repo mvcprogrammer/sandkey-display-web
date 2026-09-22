@@ -54,7 +54,7 @@ have to line up with the artwork to the pixel. None of those numbers are arbitra
 
 ### Deliberate departures
 
-Four, and no others:
+Five, and no others:
 
 | | |
 |---|---|
@@ -62,6 +62,7 @@ Four, and no others:
 | **Rental listings open the rental detail route** | Both legacy views tagged their tiles `residential_listing_data`, so the rental handler in `navigation.js` never fired and a rental opened `/Residential/Details/…`. It happened to work because both routes look up the same key. Rentals now use `rental_listing_data` and their own route. Neither class carries any styling, so nothing moves. |
 | **Photos are not proxied** | `photo_swap.js` fetched each photo as an array buffer and rebuilt it as a blob URL, a workaround for photos being served through the application tier. They now come from the CDN under the same origin, so swapping one is a state change. |
 | **Previous on the first page stays on the first page** | The legacy link pointed at page −1 and the controller silently clamped it. The button is still there and still in the same place; it just no longer asks for a page that cannot exist. |
+| **Listings default to lowest price first** | The legacy kiosk opened every grid highest price first. The office asked for the reverse on 2026-09-22, so a route with no sort segment, and the two buttons on the condo screen, now sort ascending. The two sort buttons under the grid are unchanged, and `/Residential/2/…` still means descending. |
 
 Two oddities in the original were reproduced rather than fixed, because fixing them would move the
 layout. `<div class="clear:both;">` appears in the results grid where a style was clearly intended:

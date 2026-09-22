@@ -88,7 +88,7 @@ createServer((request, response) => {
     const items = selectListings({
       type: url.searchParams.get('type') ?? 'Sale',
       condo: Number(url.searchParams.get('condo') ?? 0),
-      order: url.searchParams.get('order') ?? 'Descending',
+      order: url.searchParams.get('order') ?? 'Ascending',
       page,
     })
 

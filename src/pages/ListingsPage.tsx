@@ -11,9 +11,12 @@ interface ListingsPageProps {
   basePath: string
 }
 
-/** The legacy routes numbered the sort direction; 1 is ascending and 2 is descending. */
+/**
+ * The legacy routes numbered the sort direction; 1 is ascending and 2 is descending. A missing
+ * segment means lowest price first, which the office asked for as the default.
+ */
 function toSortDirection(segment: string | undefined): SortDirection {
-  return segment === '1' ? SortDirection.Ascending : SortDirection.Descending
+  return segment === '2' ? SortDirection.Descending : SortDirection.Ascending
 }
 
 /**
