@@ -11,6 +11,9 @@ import { dirname, join } from 'node:path'
 const here = dirname(fileURLToPath(import.meta.url))
 const goldenDir = join(here, '..', 'golden', 'pages')
 
+/** The Bridge media CDN. The legacy kiosk proxied photos under /photo; the API now returns this. */
+const MEDIA_CDN = 'https://dvvjkgh94f2v6.cloudfront.net'
+
 /** Pulls the inner text of the first match of a pattern, or an empty string. */
 const text = (html, pattern) => (html.match(pattern)?.[1] ?? '').trim()
 
@@ -31,7 +34,7 @@ function parseTile(tile) {
     bedroomsTotal: Number(beds),
     bathroomsFull: Number(baths),
     livingArea: Number(area.replace(/,/g, '')),
-    primaryPhoto: photo === '' ? null : { order: 0, url: photo.replace('/photo/', '/media/') },
+    primaryPhoto: photo === '' ? null : { order: 0, url: photo.replace('/photo/', `${MEDIA_CDN}/`) },
   }
 }
 
@@ -77,7 +80,7 @@ const featureCol = (label) => {
 }
 
 const photos = [...detailHtml.matchAll(/class="property-photo-small" id="(\/photo\/[^"]*)"/g)].map(
-  (match, index) => ({ order: index, url: match[1].replace('/photo/', '/media/') }),
+  (match, index) => ({ order: index, url: match[1].replace('/photo/', `${MEDIA_CDN}/`) }),
 )
 
 const bathrooms = rightCol('Bathrooms')

@@ -19,8 +19,8 @@ kiosk behind a pane of glass, not a responsive site.
 
 `mock/server.mjs` serves fixtures captured from the live kiosk, so the screens can be developed and
 compared without MLS credentials. To run against the real API instead, start it on `:5036` and skip
-the mock. Both `/api` and `/media` are proxied by the dev server, standing in for the two
-CloudFront behaviours that serve them in production.
+the mock. `/api` is proxied by the dev server, standing in for the CloudFront behaviour that
+serves it in production. Photos are absolute Bridge CDN URLs and load directly in both.
 
 ```bash
 npm run build          # production bundle into dist/
@@ -60,7 +60,7 @@ Five, and no others:
 |---|---|
 | **Bedroom and bathroom pluralisation** | The legacy views had the test inverted — `BedroomsTotal > 1 ? "Bed" : "Beds"` — so the live kiosk reads "3 Bed" and "1 Beds". Corrected. This is the only visible text that differs from the old screen. |
 | **Rental listings open the rental detail route** | Both legacy views tagged their tiles `residential_listing_data`, so the rental handler in `navigation.js` never fired and a rental opened `/Residential/Details/…`. It happened to work because both routes look up the same key. Rentals now use `rental_listing_data` and their own route. Neither class carries any styling, so nothing moves. |
-| **Photos are not proxied** | `photo_swap.js` fetched each photo as an array buffer and rebuilt it as a blob URL, a workaround for photos being served through the application tier. They now come from the CDN under the same origin, so swapping one is a state change. |
+| **Photos are not proxied** | `photo_swap.js` fetched each photo as an array buffer and rebuilt it as a blob URL, a workaround for photos being served through the application tier. They now load straight from the Bridge CDN, so swapping one is a state change. |
 | **Previous on the first page stays on the first page** | The legacy link pointed at page −1 and the controller silently clamped it. The button is still there and still in the same place; it just no longer asks for a page that cannot exist. |
 | **Listings default to lowest price first** | The legacy kiosk opened every grid highest price first. The office asked for the reverse on 2026-09-22, so a route with no sort segment, and the two buttons on the condo screen, now sort ascending. The two sort buttons under the grid are unchanged, and `/Residential/2/…` still means descending. |
 
