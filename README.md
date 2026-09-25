@@ -54,7 +54,7 @@ have to line up with the artwork to the pixel. None of those numbers are arbitra
 
 ### Deliberate departures
 
-Six, and no others:
+Seven, and no others:
 
 | | |
 |---|---|
@@ -63,6 +63,7 @@ Six, and no others:
 | **Photos are not proxied** | `photo_swap.js` fetched each photo as an array buffer and rebuilt it as a blob URL, a workaround for photos being served through the application tier. They now load straight from the Bridge CDN, so swapping one is a state change. |
 | **Previous on the first page stays on the first page** | The legacy link pointed at page −1 and the controller silently clamped it. The button is still there and still in the same place; it just no longer asks for a page that cannot exist. |
 | **The home screen has no building selection** | The old photo carried a touchable region over each condominium, a "(or touch a building)" line, and the two buttons painted into the top-right corner. On 2026-09-22 the office asked for the building option to go, because visitors found it confusing, and for the buttons to sit in the middle of the screen. The buttons are real elements now, drawn in the artwork's colours over the clean photograph, and the condo screen and its routes are gone. |
+| **The results grid says "Loading..." while the API answers** | The legacy kiosk was a server-rendered page, so the visitor stared at the home screen until the listings arrived. The port navigates at once and the grid stood empty until the response came back, which on the first request after an idle spell is a couple of seconds while the Lambda starts. The grid now shows "Loading..." in the same orange style as its error message until the listings arrive. Added 2026-09-24. |
 | **Listings default to lowest price first** | The legacy kiosk opened every grid highest price first. The office asked for the reverse on 2026-09-22, so a route with no sort segment, and the two buttons on the condo screen, now sort ascending. The two sort buttons under the grid are unchanged, and `/Residential/2/…` still means descending. |
 
 Two oddities in the original were reproduced rather than fixed, because fixing them would move the

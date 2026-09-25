@@ -40,8 +40,10 @@ export function ListingsPage({ type, basePath }: ListingsPageProps): JSX.Element
   return (
     <>
       <div className="property_container">
-        {loading && data === null ? null : null}
-        {error !== null ? (
+        {loading && data === null ? (
+          /* Shown while the API answers; the first call after an idle spell can take a couple of seconds. */
+          <div className="property_listing_data_touch_here">Loading...</div>
+        ) : error !== null ? (
           <div className="property_listing_data_touch_here">
             Listings are unavailable at the moment. Please try again shortly.
           </div>
