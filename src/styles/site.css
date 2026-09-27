@@ -863,6 +863,16 @@ tr.pager td {
     text-align:center;
 }
 
+/* The grid's Loading... and error messages; sized to be noticed from across the room. */
+.property_listing_status
+{
+    color:#ff8503;
+    font-size:72px;
+    font-weight:bold;
+    padding-top:340px;
+    text-align:center;
+}
+
 /* Navigation */
 
 .Navigation_Container
