@@ -2,7 +2,7 @@
  * A stand-in for SandKey.Api.Display, serving the fixtures captured from the live kiosk.
  *
  * It exists so the kiosk can be developed and visually compared against the old screens without
- * MLS credentials. It is not a test double for the API's behaviour - run the real API for that.
+ * MLS credentials. It is not a test double for the API's behavior - run the real API for that.
  *
  *   node mock/server.mjs          # then: npm run dev
  */
