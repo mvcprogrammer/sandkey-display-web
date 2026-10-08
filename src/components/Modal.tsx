@@ -1,5 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
+import { STAGE_ID } from './Stage'
 
 /** Transition duration the legacy bPopup calls used. */
 const TRANSITION_MS = 650
@@ -23,7 +24,9 @@ interface ModalProps {
  * The dialog is portalled to `document.body`, which is where bPopup appended it (`appendTo:
  * 'body'` was its default). That matters for the keyboard: the detail page sets white text, and
  * the key labels are only legible on the grey key artwork because they inherit the body's dark
- * colour instead.
+ * colour instead. When the kiosk is scaled to fit a window (see Stage), the portal goes into the
+ * stage instead, so the dialog is scaled with everything else; the stage inherits the same body
+ * colour, so the keyboard reads the same.
  */
 export function Modal({ open, transition = 'fadeIn', onClose, children }: ModalProps): JSX.Element | null {
   const [mounted, setMounted] = useState(open)
@@ -73,6 +76,6 @@ export function Modal({ open, transition = 'fadeIn', onClose, children }: ModalP
         {children}
       </div>
     </div>,
-    document.body,
+    document.getElementById(STAGE_ID) ?? document.body,
   )
 }

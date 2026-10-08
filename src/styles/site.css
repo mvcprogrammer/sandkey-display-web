@@ -1166,3 +1166,33 @@ tr.pager td {
     width:1919px;
     height:1075px;
 }
+
+/* ---------- Fit to window ----------
+   Stage.tsx renders these two elements whenever the viewport is not 1920 wide. On the kiosk
+   neither exists and nothing below applies. */
+.kiosk-backdrop {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background: #1d1d1d;
+}
+
+/* #body is 1079px tall for the kiosk; when the stage is in play that would leave a scrollbar on a
+   short window. :has() scopes the fix to that case and never matches on the kiosk. */
+#body:has(> .kiosk-backdrop) {
+    height: auto;
+}
+
+html:has(.kiosk-backdrop),
+body:has(.kiosk-backdrop) {
+    overflow: hidden;
+}
+
+.kiosk-stage {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    transform-origin: top left;
+    background: no-repeat url("/Images/aerialsksouth.jpg");
+}

@@ -17,6 +17,12 @@ npm run dev            # kiosk on :5173
 Open <http://localhost:5173> at a 1920×1080 viewport. The layout is fixed to that size — this is a
 kiosk behind a pane of glass, not a responsive site.
 
+Any other window size gets the whole screen scaled to fit, letterboxed, with its proportions kept
+(`src/components/Stage.tsx`). The test is width: at exactly 1920 wide, which is the kiosk with or
+without browser chrome, nothing is wrapped or scaled and the page renders as it always has. So the
+same URL can be opened on a laptop, a phone, or inside an iframe on another site and still look
+like the kiosk, while the office's glass is untouched.
+
 `mock/server.mjs` serves fixtures captured from the live kiosk, so the screens can be developed and
 compared without MLS credentials. To run against the real API instead, start it on `:5036` and skip
 the mock. `/api` is proxied by the dev server, standing in for the CloudFront behaviour that
