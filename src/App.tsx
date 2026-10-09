@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes, useNavigate } from 'react-router-dom'
+import { Navigate, Route, Routes, useNavigate } from 'react-router'
 import { ListingType } from './api/types'
 import { useIdleTimer } from './hooks/useIdleTimer'
 import { DetailPage } from './pages/DetailPage'

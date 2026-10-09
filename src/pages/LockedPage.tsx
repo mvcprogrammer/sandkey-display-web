@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router'
 
 /**
  * The screen the kiosk falls back to after three minutes of inactivity. Touching it anywhere

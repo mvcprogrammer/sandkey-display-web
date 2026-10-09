@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router'
 import { getListings } from '../api/client'
 import { ListingType, SortDirection } from '../api/types'
 import { ListingCard } from '../components/ListingCard'

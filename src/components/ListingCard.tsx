@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router'
 import type { ListingSummary } from '../api/types'
 import { formatArea, formatListingPrice, isLease, pluralize } from '../format'
 

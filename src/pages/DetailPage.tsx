@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router'
 import { ApiError, getListing, submitInquiry } from '../api/client'
 import { Modal } from '../components/Modal'
 import { NumPad } from '../components/NumPad'
